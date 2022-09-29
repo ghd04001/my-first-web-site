@@ -3,53 +3,43 @@
   <head>
     <title>러시아의 작가들</title>
     <meta charset="UTF-8" />
-    <style>
-      h2 {
-        margin-bottom: 0px;
-      }
-      h3 {
-        margin-top: 0px;
-      }
-      h4 {
-        margin: 0px;
-      }
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-67M7W7QLQH"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-67M7W7QLQH");
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1 align="center"><a href="index.html">러시아의 작가들</a></h1>
-
-    <h4><span style="padding-left: 40px"></span>목차</h4>
-    <ul>
-      <li><a href="1 Pushkin.html">알렉산드르 푸시킨</a></li>
-      <li><a href="2 Gogol.html">니콜라이 고골</a></li>
-      <li><a href="3 Tolstoy.html">레프 톨스토이</a></li>
-      <li><a href="4 Dostoevsky.html">표도르 도스토옙스키</a></li>
-      <li><a href="5 Chekhov.html">안톤 체호프</a></li>
-    </ul>
-
-    <img src="Pushkin.jfif" style="height: 600px; margin: 10px" />
-
-    <img src="Gogol.jfif" style="height: 600px; margin: 10px" />
-
-    <img src="Tolstoy.jfif" style="height: 600px; margin: 10px" />
-
-    <img src="Dostoevsky.jfif" style="height: 600px; margin: 10px" />
-
-    <img src="Chekhov.jfif" style="height: 600px; margin: 10px" />
+    <h1><a href="index.html">러시아의 작가들</a></h1>
+    <div id="grid">
+      <div id="index">
+        <h4>목차</h4>
+        <ul>
+          <li><a href="1 Pushkin.html">알렉산드르 푸시킨</a></li>
+          <li><a href="2 Gogol.html">니콜라이 고골</a></li>
+          <li><a href="3 Tolstoy.html">레프 톨스토이</a></li>
+          <li><a href="4 Dostoevsky.html">표도르 도스토옙스키</a></li>
+          <li><a href="5 Chekhov.html">안톤 체호프</a></li>
+        </ul>
+      </div>
+      <div id="article">
+        <table>
+          <tr>
+            <td width="15%">
+              <img src="Pushkin.jfif" />
+            </td>
+            <td width="15%">
+              <img src="Gogol.jfif" />
+            </td>
+            <td width="15%">
+              <img src="Tolstoy.jfif" />
+            </td>
+            <td width="15%">
+              <img src="Dostoevsky.jfif" />
+            </td>
+            <td width="15%">
+              <img src="Chekhov.jfif" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
