@@ -3,10 +3,24 @@
   <head>
     <title>러시아의 작가들</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" id="stylesheet" href="light_style.css" />
   </head>
 
   <body>
+    <input
+      id="dark_light"
+      type="button"
+      value="dark"
+      onclick="
+      if(this.value === 'dark') {
+        document.getElementById('stylesheet').href='dark_style.css';
+        this.value = 'light'
+      } else {
+        document.getElementById('stylesheet').href='light_style.css';
+        this.value = 'dark'
+      }
+    "
+    />
     <h1><a href="index.html">러시아의 작가들</a></h1>
     <div id="grid">
       <div id="index">
@@ -23,19 +37,34 @@
         <table>
           <tr>
             <td width="15%">
-              <img src="Pushkin.jfif" />
+              <img
+                src="Pushkin.jfif"
+                onclick="alert('알렉산드르 푸시킨(Alexander Pushkin)')"
+              />
             </td>
             <td width="15%">
-              <img src="Gogol.jfif" />
+              <img
+                src="Gogol.jfif"
+                onclick="alert('니콜라이 고골(Nikolai Gogol)')"
+              />
             </td>
             <td width="15%">
-              <img src="Tolstoy.jfif" />
+              <img
+                src="Tolstoy.jfif"
+                onclick="alert('레프 톨스토이(Leo Tolstoy)')"
+              />
             </td>
             <td width="15%">
-              <img src="Dostoevsky.jfif" />
+              <img
+                src="Dostoevsky.jfif"
+                onclick="alert('표도르 도스토옙스키(Fyodor Dostoevsky)')"
+              />
             </td>
             <td width="15%">
-              <img src="Chekhov.jfif" />
+              <img
+                src="Chekhov.jfif"
+                onclick="alert('안톤 체호프(Anton Chekhov)')"
+              />
             </td>
           </tr>
         </table>
