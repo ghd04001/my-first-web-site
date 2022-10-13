@@ -4,12 +4,30 @@
     <title>러시아의 작가들 - 알렉산드르 푸시킨</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" id="stylesheet" href="light_style.css" />
+    <!-- <script type="text/javascript" src="index.html">
+      var mode = document.querySelector('#dark_light').value
+    </script> -->
     <!-- I want to refer the #dark_light value from index.html file.
     But don't know how to do. -->
+    <!-- 미디어 쿼리 이용해서 변수 값이 dark이면 dark로 적용하고, 아니면 기본 베이스로.
+    버튼 클릭시 변수 값 변경. -->
+    <!-- CSS media query prefers-color-scheme(Dark mode with user's setting)
+      https://www.daleseo.com/css-prefers-color-scheme/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
+    <input
+      id="dark_light"
+      type="button"
+      value="dark"
+      onclick="nightDayHandler(this);"
+    />
     <h1><a href="index.html">러시아의 작가들</a></h1>
+    <!-- <script>
+      window.alert(mode);
+    </script> -->
     <div id="grid">
       <div id="index">
         <h4>목차</h4>
@@ -22,7 +40,14 @@
         </ul>
       </div>
       <div id="article">
-        <h2>알렉산드르 푸시킨</h2>
+        <h2>
+          <a
+            href="https://en.wikipedia.org/wiki/Alexander_Pushkin"
+            target="_blink"
+            title="Alexander Pushkin wikipedia"
+            >알렉산드르 푸시킨</a
+          >
+        </h2>
         <h3>Александр Пушкин | Alexander Pushkin</h3>
         <img src="Pushkin.jfif" style="width: 30%; float: right; margin: 2%" />
         <p>

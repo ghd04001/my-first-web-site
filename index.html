@@ -4,6 +4,8 @@
     <title>러시아의 작가들</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" id="stylesheet" href="light_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
@@ -11,15 +13,7 @@
       id="dark_light"
       type="button"
       value="dark"
-      onclick="
-      if(this.value === 'dark') {
-        document.getElementById('stylesheet').href='dark_style.css';
-        this.value = 'light'
-      } else {
-        document.getElementById('stylesheet').href='light_style.css';
-        this.value = 'dark'
-      }
-    "
+      onclick="nightDayHandler(this)"
     />
     <h1><a href="index.html">러시아의 작가들</a></h1>
     <div id="grid">

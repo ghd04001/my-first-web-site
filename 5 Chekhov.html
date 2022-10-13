@@ -4,9 +4,17 @@
     <title>러시아의 작가들 - 안톤 체호프</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="light_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
+    <input
+      id="dark_light"
+      type="button"
+      value="dark"
+      onclick="nightDayHandler(this)"
+    />
     <h1><a href="index.html">러시아의 작가들</a></h1>
     <div id="grid">
       <div id="index">
@@ -20,7 +28,14 @@
         </ul>
       </div>
       <div id="article">
-        <h2>안톤 체호프</h2>
+        <h2>
+          <a
+            href="https://en.wikipedia.org/wiki/Anton_Chekhov"
+            target="_blink"
+            title="Anton Chekhov wikipedia"
+            >안톤 체호프</a
+          >
+        </h2>
         <h3>Антон Че́хов | Anton Chekhov</h3>
         <img src="Chekhov.jfif" style="width: 30%; float: right; margin: 2%" />
         <p>

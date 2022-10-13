@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: #020715;
   color: white;
 }
 
@@ -28,7 +28,6 @@ h4 {
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
